@@ -1,5 +1,9 @@
 import './style.css';
+import Tacos from './tacos.jpeg'
 
-const hello = `Hello World`;
+const ourTacos = new Image();
+ourTacos.src = Tacos;
+ourTacos.classList.add("tacos-image");
 
-console.log(hello)
+const imageBox = document.querySelector(".image-box");
+imageBox.appendChild(ourTacos);

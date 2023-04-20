@@ -1,0 +1,29 @@
+{
+  "name": "restaurant-homepage",
+  "version": "1.0.0",
+  "description": "A simple restaurant homepage dynamically built using JavaScript",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ash-taylor/restaurant-homepage.git"
+  },
+  "author": "Ash Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ash-taylor/restaurant-homepage/issues"
+  },
+  "homepage": "https://github.com/ash-taylor/restaurant-homepage#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.3"
+  }
+}

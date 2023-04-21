@@ -1,3 +1,6 @@
 node_modules/
 .history
 dist/
+.eslintrc.json
+.prettierignore
+.prettierrc

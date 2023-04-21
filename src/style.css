@@ -63,24 +63,59 @@ li:hover {
     height: 100%;
 }
 
-.about-container {
-    font-size: 1.5rem;
+.about-container,
+.menu-container,
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    overflow: auto;
     margin: auto;
     border: 2px solid var(--blue);
     border-radius: 10px;
     text-align: center;
     background-color: var(--vanilla);
+    max-height: 80%;
     width: 30%;
 }
 
-.about-box {
+.menu-container::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.menu-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu-container::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    outline: 1px solid var(--vanilla);
+}
+
+.about-box,
+.starter-box,
+.main-box,
+.dessert-box,
+.contact-box {
     border-bottom: 3px solid var(--blue);
     margin: 30px;
     padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    white-space: pre-line;
+}
+
+.contact-box {
+    border-bottom: none;
+}
+
+.main-box  {
+    margin: 0;
 }
 
 .tacos-image {
-    width: 50%;
+    width: 70%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
